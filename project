@@ -1,0 +1,11 @@
+CREATE TABLE accessories (id INTEGER PRIMARY KEY, name TEXT, price NUMERIC, stock INTEGER, color TEXT);
+
+INSERT INTO accessories VALUES (1, "Necklace", 5.50, 100, "silver");
+INSERT INTO accessories VALUES (2, "Earrings", 2.75, 150, "silver");
+INSERT INTO accessories VALUES (3, "Bracelet", 4.00, 50, "gold");
+INSERT INTO accessories VALUES (4, "Piercing", 2.00, 125, "gold");
+INSERT INTO accessories VALUES (5, "Pendant", 4.50, 25, "black");
+
+SELECT SUM(stock) FROM accessories;
+SELECT * FROM accessories WHERE price < 5 AND color = "silver";
+SELECT * FROM accessories;
